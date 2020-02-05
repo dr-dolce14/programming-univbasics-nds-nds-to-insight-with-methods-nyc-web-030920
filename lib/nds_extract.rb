@@ -21,12 +21,12 @@ end
 def directors_totals(nds)
   result = {}
 director = 0
-while director < directors_database.count do
+while director < nds.count do
 movie = 0
-while movie < directors_database[director][:movies].count do
+while movie < nds[director][:movies].count do
 total_gross = 0
-total_gross += gross_for_director(directors_database[director])
-result[directors_database[director][:name]] = total_gross
+total_gross += gross_for_director(nds[director])
+result[nds[director][:name]] = total_gross
 movie += 1
 end
 director += 1
