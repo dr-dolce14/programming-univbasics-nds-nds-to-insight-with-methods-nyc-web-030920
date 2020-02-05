@@ -25,7 +25,7 @@ while director < directors_database.count do
 movie = 0 
 total_gross = 0 
 while movie < directors_database[director][:movies].count do 
-total_gross += gross_for_director(director_data)
+total_gross += gross_for_director(nds[director])
 result[directors_database[director][:name]] = total_gross 
 movie += 1 
 end 
