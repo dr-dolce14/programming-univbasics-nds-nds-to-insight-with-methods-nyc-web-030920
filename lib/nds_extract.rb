@@ -31,8 +31,6 @@ movie += 1
 end 
 director += 1 
 end 
-nil
 result
-
 end
 
